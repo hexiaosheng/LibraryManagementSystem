@@ -11,6 +11,7 @@ public class Book {
     private String bookName;
     private String bookAuthor;
     private Integer bookInventory;
+
     private boolean isBorrowed;
 
     public Book(String bookName, String bookAuthor, Integer bookInventory) {
@@ -46,5 +47,13 @@ public class Book {
 
     public void setBookInventory(Integer bookInventory) {
         this.bookInventory = bookInventory;
+    }
+
+    public boolean isBorrowed() {
+        return isBorrowed;
+    }
+
+    public void setBorrowed(boolean borrowed) {
+        isBorrowed = borrowed;
     }
 }

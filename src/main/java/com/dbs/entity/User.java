@@ -10,10 +10,10 @@ public class User {
     private String userID;
     private String userName;
     private String userPassword;
-    private String userRole;
+    private UserType userRole;
     private  boolean isLogin;
 
-    public User(String userName, String userPassword, String userRole) {
+    public User(String userName, String userPassword, UserType userRole) {
         this.userID = UUID.randomUUID().toString();;
         this.userName = userName;
         this.userPassword = userPassword;
@@ -40,11 +40,11 @@ public class User {
         this.userPassword = userPassword;
     }
 
-    public String getUserRole() {
+    public UserType getUserRole() {
         return userRole;
     }
 
-    public void setUserRole(String userRole) {
+    public void setUserRole(UserType userRole) {
         this.userRole = userRole;
     }
 
@@ -55,4 +55,9 @@ public class User {
     public void setLogin(boolean login) {
         isLogin = login;
     }
+    public enum UserType
+    {
+        user,admin;
+    }
 }
+

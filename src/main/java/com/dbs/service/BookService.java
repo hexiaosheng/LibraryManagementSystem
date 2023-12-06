@@ -16,5 +16,9 @@ public class BookService {
     }
     public void showBookList(){
         System.out.println("Book List:\n");
+        for(Book book:bookList){
+            System.out.println(String.format("%s - %s  - Inventory: %d",book.getBookName(),
+                    book.getBookAuthor(),book.getBookInventory())+"\n");
+        }
     }
 }
