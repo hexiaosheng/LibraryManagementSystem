@@ -49,6 +49,7 @@ public class UserService {
             if(user.getUserName().equalsIgnoreCase(userName)
                     && user.getUserPassword().equals(userPassword)){
                 blnFound=true;
+                user.setCurrentUser(true);
                 System.out.println(String.format("%s %s successfully logged in.",user.getUserRole().toString(),
                         user.getUserName()));
                 return;
@@ -58,5 +59,14 @@ public class UserService {
         if(!blnFound){
             System.out.println("You have been not registered, please register first.");
         }
+    }
+
+    public User getCurrentUser() {
+        for (User user : userList) {
+            if (user.isCurrentUser() == true) {
+                return user;
+            }
+        }
+        return null;
     }
 }

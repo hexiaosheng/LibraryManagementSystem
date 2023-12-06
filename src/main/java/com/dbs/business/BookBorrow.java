@@ -9,7 +9,7 @@ import com.dbs.entity.Library;
 public class BookBorrow extends Business {
     @Override
     public void Process() {
-        //cmd sample - borrow "Clean Code" " Robert C. Martin"
+        //cmd sample - borrow "Clean Code" "Robert C. Martin"
         String bookName=BusinessParameters[1];
         String bookAuthor=BusinessParameters[2];
 

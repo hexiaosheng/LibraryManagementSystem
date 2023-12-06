@@ -1,6 +1,7 @@
 package com.dbs.business;
 
 import com.dbs.entity.Library;
+import com.dbs.entity.User;
 
 /**
  * @author Jason He
@@ -9,7 +10,13 @@ import com.dbs.entity.Library;
 public class BookDelete extends Business {
     @Override
     public void Process() {
-        //cmd sample -delete "Clean Code" " Robert C. Martin"
+        //check user role, only admin can delete book from library
+        User user=Library.userService.getCurrentUser();
+        if(user==null || user.getUserRole()!= User.UserType.admin){
+            System.out.println("Please login in admin.");
+            return;
+        }
+        //cmd sample -delete "Clean Code" "Robert C. Martin"
         String bookName=BusinessParameters[1];
         String bookAuthor=BusinessParameters[2];
 

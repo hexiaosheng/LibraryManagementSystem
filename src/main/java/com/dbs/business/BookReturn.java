@@ -9,7 +9,7 @@ import com.dbs.entity.Library;
 public class BookReturn extends Business {
     @Override
     public void Process() {
-        //cmd sample - return "Clean Code" " Robert C. Martin"
+        //cmd sample - return "Clean Code" "Robert C. Martin"
         String bookName=BusinessParameters[1];
         String bookAuthor=BusinessParameters[2];
 

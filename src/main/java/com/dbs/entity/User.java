@@ -12,6 +12,7 @@ public class User {
     private String userPassword;
     private UserType userRole;
     private  boolean isLogin;
+    private boolean isCurrentUser;
 
     public User(String userName, String userPassword, UserType userRole) {
         this.userID = UUID.randomUUID().toString();;
@@ -55,6 +56,15 @@ public class User {
     public void setLogin(boolean login) {
         isLogin = login;
     }
+
+    public boolean isCurrentUser() {
+        return isCurrentUser;
+    }
+
+    public void setCurrentUser(boolean currentUser) {
+        isCurrentUser = currentUser;
+    }
+
     public enum UserType
     {
         user,admin;

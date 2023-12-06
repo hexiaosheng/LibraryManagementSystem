@@ -9,7 +9,7 @@ import com.dbs.entity.Library;
 public class BookSearch extends Business{
     @Override
     public void Process() {
-        //cmd sample - search "Clean Code" " Robert C. Martin"
+        //cmd sample - search "Clean Code" "Robert C. Martin"
         String bookName=BusinessParameters[1];
         String bookAuthor=BusinessParameters[2];
 

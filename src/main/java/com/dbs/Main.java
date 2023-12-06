@@ -18,8 +18,6 @@ public class Main {
         Scanner scan = new Scanner(System.in);
         while (scan.hasNext()) {
             String str = scan.nextLine();
-            //String[] paras=str.split(" ");
-            //String[] paras=str.split(" (?=(?:[^\"]*\"[^\"]*\")*[^\"]*$)", -1);
             String[] paras=str.trim().split(" (?=([^\\\"]*\\\"[^\\\"]*\\\")*[^\\\"]*$)",-1);
             if(paras!=null && paras.length>0){
                 try{
