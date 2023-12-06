@@ -15,10 +15,20 @@ public class BookService {
         this.bookList = bookList;
     }
     public void showBookList(){
-        System.out.println("Book List:\n");
+        System.out.println("Book List:");
         for(Book book:bookList){
             System.out.println(String.format("%s - %s  - Inventory: %d",book.getBookName(),
-                    book.getBookAuthor(),book.getBookInventory())+"\n");
+                    book.getBookAuthor(),book.getBookInventory()));
+        }
+    }
+
+    public void searchBook(String bookName,String bookAuthor){
+        for(Book book:bookList){
+            if(book.getBookName().equalsIgnoreCase(bookName) && book.getBookAuthor().equalsIgnoreCase(bookAuthor))
+            {
+                System.out.println(String.format("%s - %s  - Inventory: %d",book.getBookName(),
+                        book.getBookAuthor(),book.getBookInventory()));
+            }
         }
     }
 }

@@ -1,8 +1,6 @@
 package com.dbs.business;
 
-import java.util.Dictionary;
 import java.util.HashMap;
-import java.util.Map;
 
 /**
  * @author Jason He
@@ -18,8 +16,14 @@ public class BusinessFactory {
 
     public static HashMap<String,String> CmdAliasingClassName(){
         HashMap map=new HashMap<String,String>();
-        map.put("login","com.dbs.business.Login");
-        map.put("register","com.dbs.business.Register");
+        map.put("login","com.dbs.business.UserLogin");
+        map.put("register","com.dbs.business.UserRegister");
+        map.put("add","com.dbs.business.BookAdd");
+        map.put("list","com.dbs.business.BookList");
+        map.put("search","com.dbs.business.BookSearch");
+        map.put("borrow","com.dbs.business.BookBorrow");
+        map.put("delete","com.dbs.business.BookDelete");
+        map.put("return","com.dbs.business.BookReturn");
 
         return map;
     }

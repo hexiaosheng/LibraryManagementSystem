@@ -1,6 +1,5 @@
 package com.dbs.service;
 
-import com.dbs.entity.Book;
 import com.dbs.entity.User;
 import com.dbs.entity.User.UserType;
 import java.util.List;

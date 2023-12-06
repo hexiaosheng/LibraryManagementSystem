@@ -13,6 +13,7 @@ public class UserBookService extends BookService{
     private List<Book> bookList;
     public UserBookService(List<Book> bookList) {
         super(bookList);
+        this.bookList=bookList;
     }
 
     public void borrowBook(String bookName,String bookAuthor){

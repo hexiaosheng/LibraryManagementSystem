@@ -12,6 +12,7 @@ public class AdminBookService extends BookService {
     private List<Book> bookList;
     public AdminBookService(List<Book> bookList) {
         super(bookList);
+        this.bookList=bookList;
     }
 
     public void  deleteBook(String bookName,String bookAuthor){
@@ -64,14 +65,14 @@ public class AdminBookService extends BookService {
                     && book.getBookAuthor().equalsIgnoreCase(bookAuthor)){
                 newBook.setBookInventory(book.getBookInventory()+bookInventory);
                 System.out.println(String.format("Book %s inventory successfully updated, new inventory: %d",book.getBookName(),
-                        book.getBookInventory())+"\n");
-            }else {
-                System.out.println(String.format("Book %s by %s add successfully, Inventory: %d",book.getBookName(),
-                        book.getBookAuthor(),book.getBookInventory())+"\n");
+                        book.getBookInventory()));
+                return;
             }
         }
         //add new book to library book list
         bookList.add(newBook);
+        System.out.println(String.format("Book %s by %s add successfully, Inventory: %s",bookName,
+                bookAuthor,bookInventory.toString()));
     }
 
 }

@@ -2,15 +2,7 @@ package com.dbs;
 
 import com.dbs.business.Business;
 import com.dbs.business.BusinessFactory;
-import com.dbs.entity.Book;
 import com.dbs.entity.Library;
-import com.dbs.entity.User;
-import com.dbs.entity.User.*;
-import com.dbs.service.AdminBookService;
-import com.dbs.service.UserBookService;
-import com.dbs.service.UserService;
-
-import java.util.ArrayList;
 import java.util.Scanner;
 
 /**
@@ -26,7 +18,9 @@ public class Main {
         Scanner scan = new Scanner(System.in);
         while (scan.hasNext()) {
             String str = scan.nextLine();
-            String[] paras=str.split(" ");
+            //String[] paras=str.split(" ");
+            //String[] paras=str.split(" (?=(?:[^\"]*\"[^\"]*\")*[^\"]*$)", -1);
+            String[] paras=str.trim().split(" (?=([^\\\"]*\\\"[^\\\"]*\\\")*[^\\\"]*$)",-1);
             if(paras!=null && paras.length>0){
                 try{
                     Business business= BusinessFactory.getInstance(paras[0]);
