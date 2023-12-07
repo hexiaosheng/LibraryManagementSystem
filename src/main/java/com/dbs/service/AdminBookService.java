@@ -36,6 +36,8 @@ public class AdminBookService extends BookService {
                     System.out.println(String.format("Cannot delete book %s because it is currently borrowed.",bookName));
                 }else{
                     bookList.remove(book);
+                    System.out.println(String.format("Book %s by %s deleted successfully.",bookName,bookAuthor));
+                    return;
                 }
             }
         }
@@ -65,14 +67,13 @@ public class AdminBookService extends BookService {
                     && book.getBookAuthor().equalsIgnoreCase(bookAuthor)){
                 newBook.setBookInventory(book.getBookInventory()+bookInventory);
                 System.out.println(String.format("Book %s inventory successfully updated, new inventory: %d",book.getBookName(),
-                        book.getBookInventory()));
+                        book.getBookInventory()+bookInventory));
                 return;
             }
         }
         //add new book to library book list
         bookList.add(newBook);
-        System.out.println(String.format("Book %s by %s add successfully, Inventory: %s",bookName,
-                bookAuthor,bookInventory.toString()));
+        System.out.println(String.format("Book %s by %s added successfully, inventory: %d.",bookName,bookAuthor,bookInventory));
     }
 
 }

@@ -23,7 +23,7 @@ public class UserBookService extends BookService{
             return;
         }
         if(bookAuthor==null || bookAuthor.isEmpty()) {
-            System.out.println("Book Author can't be empty!");
+            System.out.println("Book author can't be empty!");
             return;
         }
         //borrow the book from the library
@@ -53,7 +53,7 @@ public class UserBookService extends BookService{
             return;
         }
         if(bookAuthor==null || bookAuthor.isEmpty()) {
-            System.out.println("Book Author can't be empty!");
+            System.out.println("Book author can't be empty!");
             return;
         }
         //return the book to library

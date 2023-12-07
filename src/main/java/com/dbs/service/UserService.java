@@ -43,6 +43,15 @@ public class UserService {
                 user.getUserName()));
     }
     public void Login(String userName,String userPassword){
+        //parameter validation
+        if(userName==null || userName.isEmpty()) {
+            System.out.println("User name can't be empty!");
+            return;
+        }
+        if(userPassword==null || userPassword.isEmpty()) {
+            System.out.println("User Password can't be empty!");
+            return;
+        }
         //check the user if registered
         boolean blnFound=false;
         for(User user:userList){
@@ -57,7 +66,7 @@ public class UserService {
         }
         //if the user not found, prompt register first
         if(!blnFound){
-            System.out.println("You have been not registered, please register first.");
+            System.out.println("Invalid user name or password.");
         }
     }
 
