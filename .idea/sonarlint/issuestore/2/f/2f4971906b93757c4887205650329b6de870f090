@@ -1,0 +1,5 @@
+
+9
+java:S1116"Remove this empty statement.(˜í­Ä8™³ØËÃ1
+v	java:S115F"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(•ª¾î8ğÒåËÃ1
+v	java:S115F"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(•ª¾î8ñÒåËÃ1

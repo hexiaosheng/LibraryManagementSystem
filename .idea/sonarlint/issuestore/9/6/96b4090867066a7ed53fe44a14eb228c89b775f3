@@ -1,0 +1,10 @@
+
+X
+java:S1854";Remove this useless assignment to local variable "library".(Ì¥È¡8ı±¯™Ä1
+D
+java:S2440"'Remove this instantiation of "Library".(Ì¥È¡8²¯™Ä1
+I
+java:S1481",Remove this unused "library" local variable.(Ì¥È¡8‚²¯™Ä1
+i
+java:S5998"LRefactor this repetition that can lead to a stack overflow for large inputs.(›“÷8‡²¯™Ä1
+L	java:S106!"+Replace this use of System.out by a logger.(¬Àùüÿÿÿÿÿ8‹²¯™Ä1

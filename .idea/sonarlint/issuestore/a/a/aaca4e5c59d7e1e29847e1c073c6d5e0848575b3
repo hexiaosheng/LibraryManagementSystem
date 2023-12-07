@@ -1,0 +1,13 @@
+
+L	java:S106"+Replace this use of System.out by a logger.(½İÂßıÿÿÿÿ8ª‡¡õÃ1
+G	java:S106"+Replace this use of System.out by a logger.(‹´ê­8«‡¡õÃ1
+G	java:S106$"+Replace this use of System.out by a logger.(ÎÅšÒ8­‡¡õÃ1
+G	java:S106'"+Replace this use of System.out by a logger.(Ë†ˆÁ8°‡¡õÃ1
+D
+java:S1125,"'Remove the unnecessary boolean literal.(œÎ¾8¯‡¡õÃ1
+G	java:S106-"+Replace this use of System.out by a logger.(Ü›´½8²‡¡õÃ1
+L	java:S1064"+Replace this use of System.out by a logger.(½İÂßıÿÿÿÿ8³‡¡õÃ1
+G	java:S1068"+Replace this use of System.out by a logger.(‹´ê­8³‡¡õÃ1
+G	java:S106<"+Replace this use of System.out by a logger.(¬Ë½¸8µ‡¡õÃ1
+L	java:S106E"+Replace this use of System.out by a logger.(Î®êùşÿÿÿÿ8¸‡¡õÃ1
+G	java:S106L"+Replace this use of System.out by a logger.(Ù¯Æ¬8¬Ù£’Ä1

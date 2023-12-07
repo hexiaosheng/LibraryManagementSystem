@@ -1,0 +1,12 @@
+
+g	java:S112
+"FDefine and throw a dedicated exception instead of using a generic one.(§©¤ôüÿÿÿÿ8Ò­Ì”Ä1
+L
+java:S3740"/Provide the parametrized type for this generic.(ÚØ²—8†œÆ”Ä1
+
+java:S1319"mThe return type of this method should be an interface such as "Map" rather than the implementation "HashMap".(¨ì¢ûÿÿÿÿ8†œÆ”Ä1
+}
+java:S1488"[Immediately return this expression instead of assigning it to the temporary variable "cmd".(Šß¼äøÿÿÿÿ8ßµ×”Ä1
+\
+java:S1118	":Add a private constructor to hide the implicit public one.(Ô“å‚øÿÿÿÿ8œÆ”Ä1
+o	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¨ì¢ûÿÿÿÿ8•œÆ”Ä1

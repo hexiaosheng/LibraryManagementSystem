@@ -19,7 +19,11 @@ public class Main {
         while (scan.hasNext()) {
             String str = scan.nextLine();
             String[] paras=str.trim().split(" (?=([^\\\"]*\\\"[^\\\"]*\\\")*[^\\\"]*$)",-1);
-            if(paras!=null && paras.length>0){
+            if(!str.trim().isEmpty() && paras!=null && paras.length>0){
+                if(str.trim().equalsIgnoreCase("exit"))
+                {
+                    break;
+                }
                 try{
                     Command cmd= CommandFactory.getInstance(paras[0]);
                     cmd.Parameters=paras;
@@ -30,7 +34,8 @@ public class Main {
                 }
             }
         }
-        //exit
+
+        //command exit to close program
         scan.close();
     }
 }

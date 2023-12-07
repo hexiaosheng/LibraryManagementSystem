@@ -1,0 +1,19 @@
+
+Y
+java:S4973%"<Strings and Boxed types should be compared using "equals()".(Åì˜š8ºÓ×•Ä1
+T
+java:S2589H"7Remove this expression which always evaluates to "true"(ö÷ƒÜ8„Ô×•Ä1
+j	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(´º²Ø8Ô×•Ä1
+G	java:S106"+Replace this use of System.out by a logger.(íáøå8Ô×•Ä1
+L	java:S106 "+Replace this use of System.out by a logger.(½•«†øÿÿÿÿ8‘Ô×•Ä1
+L	java:S106&"+Replace this use of System.out by a logger.(§šÊ¬ûÿÿÿÿ8’Ô×•Ä1
+G	java:S106."+Replace this use of System.out by a logger.(ŸïŸß8•Ô×•Ä1
+j	java:S1001"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(·ğ‹8˜Ô×•Ä1
+^
+java:S1854@"<Remove this useless assignment to local variable "blnFound".(ãªŠÓøÿÿÿÿ8šÔ×•Ä1
+G	java:S1064"+Replace this use of System.out by a logger.(íáøå8œÔ×•Ä1
+L	java:S1068"+Replace this use of System.out by a logger.(½•«†øÿÿÿÿ8 Ô×•Ä1
+L	java:S106B"+Replace this use of System.out by a logger.(ğç™Óıÿÿÿÿ8®Ô×•Ä1
+L	java:S106I"+Replace this use of System.out by a logger.(Ñ¹£¶şÿÿÿÿ8³Ô×•Ä1
+I
+java:S1125O"'Remove the unnecessary boolean literal.(Ç­šóûÿÿÿÿ8´Ô×•Ä1
