@@ -1,4 +1,4 @@
-package com.dbs.business;
+package com.dbs.command;
 
 import com.dbs.entity.Library;
 import com.dbs.entity.User;
@@ -7,7 +7,7 @@ import com.dbs.entity.User;
  * @author Jason He
  * @date 2023/12/6 17:18
  */
-public class BookAdd extends Business {
+public class CmdBookAdd extends Command {
     @Override
     public void Process() {
         //check user role, only admin can add book to library
@@ -17,9 +17,9 @@ public class BookAdd extends Business {
             return;
         }
         //cmd sample - add "Clean Code" "Robert C. Martin" 5
-        String bookName=BusinessParameters[1];
-        String bookAuthor=BusinessParameters[2];
-        Integer bookInventory= Integer.parseInt(BusinessParameters[3]);
+        String bookName=Parameters[1];
+        String bookAuthor=Parameters[2];
+        Integer bookInventory= Integer.parseInt(Parameters[3]);
 
         Library.adminBookService.addBook(bookName,bookAuthor,bookInventory);
     }

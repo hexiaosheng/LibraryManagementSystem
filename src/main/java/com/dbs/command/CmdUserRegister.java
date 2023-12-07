@@ -1,4 +1,4 @@
-package com.dbs.business;
+package com.dbs.command;
 
 import com.dbs.entity.Library;
 import com.dbs.entity.User.UserType;
@@ -7,12 +7,12 @@ import com.dbs.entity.User.UserType;
  * @author Jason He
  * @date 2023/12/5 19:56
  */
-public class UserRegister extends Business{
+public class CmdUserRegister extends Command {
     @Override
     public void Process() {
-        UserType userRole= UserType.valueOf(BusinessParameters[1]) ;
-        String userName=BusinessParameters[2];
-        String userPassword=BusinessParameters[3];
+        UserType userRole= UserType.valueOf(Parameters[1]) ;
+        String userName=Parameters[2];
+        String userPassword=Parameters[3];
         Library.userService.Register(userName,userPassword,userRole);
     }
 

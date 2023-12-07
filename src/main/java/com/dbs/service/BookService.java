@@ -11,6 +11,13 @@ import java.util.List;
  */
 public class BookService {
     private List<Book> bookList;
+    public List<Book> getBookList() {
+        return bookList;
+    }
+
+    public void setBookList(List<Book> bookList) {
+        this.bookList = bookList;
+    }
     public BookService(List<Book> bookList) {
         this.bookList = bookList;
     }

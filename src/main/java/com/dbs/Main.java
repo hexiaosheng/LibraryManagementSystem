@@ -1,7 +1,7 @@
 package com.dbs;
 
-import com.dbs.business.Business;
-import com.dbs.business.BusinessFactory;
+import com.dbs.command.Command;
+import com.dbs.command.CommandFactory;
 import com.dbs.entity.Library;
 import java.util.Scanner;
 
@@ -21,12 +21,12 @@ public class Main {
             String[] paras=str.trim().split(" (?=([^\\\"]*\\\"[^\\\"]*\\\")*[^\\\"]*$)",-1);
             if(paras!=null && paras.length>0){
                 try{
-                    Business business= BusinessFactory.getInstance(paras[0]);
-                    business.BusinessParameters=paras;
-                    business.Process();
+                    Command cmd= CommandFactory.getInstance(paras[0]);
+                    cmd.Parameters=paras;
+                    cmd.Process();
                 }catch (Exception ex)
                 {
-                    System.out.println("System exception,"+ex.toString());
+                    System.out.println("Invalid command,which system can't support");
                 }
             }
         }
